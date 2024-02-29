@@ -1,0 +1,980 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1219.2,11802.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.ReaderWriter</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1229.6,11737.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">new System.Data.DataTable();</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="voen" />
+      <Variable x:TypeArguments="x:Int32" Name="Index" />
+      <Variable x:TypeArguments="ui:DatabaseConnection" Name="dbConection" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtVoenData" />
+      <Variable x:TypeArguments="x:Boolean" Name="isSendButtonExist" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: İCBARİ SIĞORTA BÜROSU" sap:VirtualizedContainerService.HintSize="1167.2,11648.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1133.6,11368.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataRow" Name="dt_row" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1071.2,64.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,136.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.dashboard" CvElementArea="615, 425, 704, 49" CvType="InputBox" DesignTimeRectangle="624, 434, 655, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='vs__search' aaname='' /&gt;" Guid="ea896620-14ea-4c4c-a70e-f7a8a37b1851" ImageBase64="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" InformativeScreenshot="2892f5a45a2fce898edfd5ba3b486a50.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İCBARİ SIĞORTA BÜROSU' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1071.2,64.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,136.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PAŞA HƏYAT'" sap:VirtualizedContainerService.HintSize="603.2,24.8" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.dashboard" CvTextArea="644, 692, 509, 20" CvTextArgument="PASA HEYAT SIGORTA ACIQ SeHMDAR CeMIYYeTI - 1401876531" CvType="Text" DesignTimeRectangle="621, 685, 682, 36" DesignTimeScaleFactor="1.25" ElementType="ListItem" FriendlyName="'PAŞA HƏYAT'" FullSelectorArgument="&lt;webctrl aria-role='option' tag='LI' aaname='*PAŞA HƏYAT SIĞORTA AÇIQ SƏHMDAR CƏMİYYƏTİ - 1401876531*' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' type='' tag='LI' class='vs__dropdown-option vs__dropdown-option--highlight' aaname='           PAŞA HƏYAT SIĞORTA AÇIQ SƏHMDAR CƏMİYYƏTİ - 1401876531          ' check:innerText='PAŞA HƏYAT SIĞORTA AÇIQ SƏHMDAR CƏMİYYƏTİ - 1401876531' /&gt;" Guid="58509d65-463e-46ee-a1a8-729fe4612925" ImageBase64="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" InformativeScreenshot="a0ccd3ec9cfb301c858d8881d4994f23.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İCBARİ SIĞORTA BÜROSU' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Müqavilələrin illik'" sap:VirtualizedContainerService.HintSize="1071.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.dashboard" DesignTimeRectangle="1193, 597, 359, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Müqavilələrin illik'" FullSelectorArgument="&lt;webctrl aaname='Müqavilələrin illik qoşmalarına əlavələrin siyahısı' class='menuLink' parentid='dashboard' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Müqavilələrin illik qoşmalarına əlavələrin siyahısı' class='menuLink' parentid='dashboard' tag='A' type='' check:innerText='Müqavilələrin illik qoşmalarına əlavələrin siyahısı' /&gt;" Guid="861e6ea2-ff2a-4e97-b38a-6b858d19cf9e" InformativeScreenshot="10aa5dd16933e0cdc3032e4344ae13d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(30) İCBARİ SIĞORTA BÜROSU' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="True" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1071.2,10953.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1037.6,10814.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NSelectItem DisplayName="Select Item '50'" sap:VirtualizedContainerService.HintSize="975.2,197.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="1000" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="9">
+                        <x:String>...</x:String>
+                        <x:String>10</x:String>
+                        <x:String>30</x:String>
+                        <x:String>50</x:String>
+                        <x:String>100</x:String>
+                        <x:String>150</x:String>
+                        <x:String>200</x:String>
+                        <x:String>500</x:String>
+                        <x:String>1000</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums" CvTextArea="106, 343, 21, 16" CvTextArgument="50" CvType="Text" DesignTimeRectangle="85, 396, 103, 45" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'50'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-control mr-1 rounded' aaname='' /&gt;" Guid="112f3ce1-f9cc-4e73-9c4a-07f5ee5c77e5" ImageBase64="" InformativeScreenshot="3ac2255385b118a916d5bb0a258f7be5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                  <Assign sap:VirtualizedContainerService.HintSize="975.2,121.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="sd:DataTable">
+                        <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">ExtractDataTable</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="sd:DataTable">
+                        <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">new DataTable()</CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Status' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Voen' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='11' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='12' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="975.2,197.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                    <uix:NExtractData.DataTable>
+                      <InOutArgument x:TypeArguments="sd:DataTable">
+                        <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">ExtractDataTable</CSharpReference>
+                      </InOutArgument>
+                    </uix:NExtractData.DataTable>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="-570, -202, 2934, 2825" DesignTimeScaleFactor="1.25" FriendlyName="'1 İllik qoşmanın əlavəsi'" FullSelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="67e1d9c1-32f8-44db-b59c-b77e31730b79" InformativeScreenshot="66cc564184a7705344708c9d8ffe28c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <Assign sap:VirtualizedContainerService.HintSize="975.2,121.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="sd:DataRow">
+                        <CSharpReference x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">dt_row</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="sd:DataRow">
+                        <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">ExtractDataTable.AsEnumerable().Where(x=&gt;x["Status"].ToString() == "Emal edildi" || x["Status"].ToString()== "İmzalandı").FirstOrDefault()</CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <If sap:VirtualizedContainerService.HintSize="975.2,10089.6" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Condition>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">dt_row != null</CSharpValue>
+                      </InArgument>
+                    </If.Condition>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="941.6,9793.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="879.2,121.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Index</CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">ExtractDataTable.Rows.IndexOf(dt_row) +2</CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <If sap:VirtualizedContainerService.HintSize="879.2,9585.6" sap2010:WorkflowViewState.IdRef="If_3">
+                          <If.Condition>
+                            <InArgument x:TypeArguments="x:Boolean">
+                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">dt_row["Status"].ToString() == "Emal edildi"</CSharpValue>
+                            </InArgument>
+                          </If.Condition>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="732.8,5379.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence sap:VirtualizedContainerService.HintSize="670.4,5292.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="ui:DatabaseConnection" Name="dbConnection" />
+                                  <Variable x:TypeArguments="ui:UiElement" Name="sendContractIsExsist" />
+                                  <Variable x:TypeArguments="x:Boolean" Name="isSendButtonExist" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON llrqk1ugg1x0xund…'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums" DesignTimeRectangle="1801, 457, 28, 20" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" Guid="3134ca3e-0a4e-4256-a00d-4449f3bd57a0" ImageBase64="" InformativeScreenshot="584f763a01ec8e4afe242332e9686588.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.FullSelectorArgument>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">string.Format("&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='SPAN' /&gt;", Index)</CSharpValue>
+                                        </InArgument>
+                                      </uix:TargetAnchorable.FullSelectorArgument>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Əlavənin ödəniş planı'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums" DesignTimeRectangle="1767, 447, 77, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BUTTON llrqmfr9g1w2gund…'" FullSelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl aaname='Əlavənin ödəniş planı' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl type='button' tag='BUTTON' class='btn btn-sm btn-primary dropdown-toggle' aaname='' /&gt;" Guid="765df54f-aa26-4853-9896-97b35e3e6239" ImageBase64="" InformativeScreenshot="74f02fee7475459b09c44d825492878e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'İcra et'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipPurchase&amp;docOid=llrqk1ugg1x0x&amp;durOid=&amp;docNo=PH0000025701/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc106c&amp;flow=flClipPurchase&amp;flowAlias=addendum&amp;docType=docType_45&amp;magusreport=1" DesignTimeRectangle="1244, 750, 122, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'İcra et'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' type='button' class='btn btn-primary btn-sm btn-labeled btn-labeled-right' aaname='  İcra et ' check:innerText='İcra et' /&gt;" Guid="cca75e01-1f4c-4011-b742-38b5f033012c" ImageBase64="" InformativeScreenshot="f6a38f04b362b674eaedfaf2ad4d46ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="1260, 761, 43, 19" ElementType="Text" FriendlyName="'İcra et'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' type='' class='' aaname='İcra et' check:innerText='İcra et' /&gt;" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bağla'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipPurchase&amp;docOid=llrqk1ugg1x0x&amp;durOid=&amp;docNo=PH0000025701/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc106c&amp;flow=flClipPurchase&amp;flowAlias=addendum&amp;docType=docType_45&amp;magusreport=1" DesignTimeRectangle="1162, 765, 73, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Bağla'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' type='' class='swal-button swal-button--confirm btn btn-sm btn-primary swal-button--danger' check:innerText='Bağla' /&gt;" Guid="30ef3236-18dc-4ac3-996d-79c09906e75c" ImageBase64="" InformativeScreenshot="2f6c0151dc51491aed07e68ea0931202.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="1495, 387, 45, 50" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;span' parentid='appForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='appForm' tag='SPAN' class='closeOffCanvas bg-primary-700' aaname='' /&gt;" Guid="9e80bded-12d4-410d-bd01-97c876f795e3" ImageBase64="" InformativeScreenshot="972668f2aa91af0a5358a2dd7dbaf9b8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NSelectItem DisplayName="Select Item '50'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="1000" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="9">
+                                      <x:String>...</x:String>
+                                      <x:String>10</x:String>
+                                      <x:String>30</x:String>
+                                      <x:String>50</x:String>
+                                      <x:String>100</x:String>
+                                      <x:String>150</x:String>
+                                      <x:String>200</x:String>
+                                      <x:String>500</x:String>
+                                      <x:String>1000</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums" CvTextArea="106, 343, 21, 16" CvTextArgument="50" CvType="Text" DesignTimeRectangle="85, 396, 103, 45" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'50'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-control mr-1 rounded' aaname='' /&gt;" Guid="112f3ce1-f9cc-4e73-9c4a-07f5ee5c77e5" ImageBase64="" InformativeScreenshot="3ac2255385b118a916d5bb0a258f7be5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Checkbox'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="154, 528, 25, 25" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Checkbox'" FuzzySelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl type='checkbox' tag='INPUT' class='styled' aaname='' /&gt;" Guid="06c75af7-d895-4c90-ab18-4e0788f2c317" ImageBase64="" InformativeScreenshot="f67685abe0af0e6550b30597b44dc649.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                      <uix:TargetAnchorable.FullSelectorArgument>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">string.Format("&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='INPUT' /&gt;", Index)</CSharpValue>
+                                        </InArgument>
+                                      </uix:TargetAnchorable.FullSelectorArgument>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Toplu imzaya göndər'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="482, 408, 213, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Toplu imzaya göndər'" FullSelectorArgument="&lt;webctrl aaname=' Toplu imzaya göndər                         ' parentid='appForm' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Toplu imzaya göndər                         ' parentid='appForm' tag='BUTTON' type='' class='btn btn-sm btn-outline-success ml-2' check:innerText='Toplu imzaya göndər' /&gt;" Guid="08304009-da7f-4617-93dd-292bd25c68e9" ImageBase64="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" InformativeScreenshot="8d62890a6fa65c8bd595121214d30e9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BƏLİ'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="1071, 723, 66, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BƏLİ'" FullSelectorArgument="&lt;webctrl aaname='BƏLİ' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='BƏLİ' tag='BUTTON' type='' class='swal-button swal-button--confirm btn btn-sm btn-primary swal-button--danger' check:innerText='BƏLİ' /&gt;" Guid="4fbbf596-7780-4bce-a48a-22c8f3768ffa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAsCAYAAADYQc64AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASkSURBVGhD7ZrpU1NXGIf7X7XFpXW6KaIsggRkIIisBkY2WUuUsrlgWIK0ErUUqxXFEgSKYQu7iEgJ+5YYICwuM61+IsD8et4jgSC5M8wwdDC5d+b5cu/LgfNwznvec8/9DOJl8xLFCFzrYszmZZjmFzAwPIr+wWGHQsf6TH0nB5aLizGbzejp68dPuQUIj09BSGySQxEen4wLlxXcwdKSeUOMaW4BGdcK4eTsgc9/cHVY0q/mY37x1YaYwZExhMUl2wx2JM6cO4/xKcOGGN3QCIKjE2wGOxJSWSzGJqdEMR8jihFAFCOAKEYAUYwAohgBRDEC2JUY7zNnkZp1hReo+108bcZsF7sSk3u9BIuvXqNe24bvvfxsxmyXXRHzxWE3/h/72tV7E1+5nhTcg315xJ3HfOfpxziFg8e8bMYcPO6FfUdPbHlGRJxPxZ0HfyJToeRt2YrZLrsi5pCbBNGp6VCqfoXyZuk6ip9VkCWm4ahvIPavdc7J2R3OPlKEsp1tQclt1DVqUa1pRJaiCJ6BYfjGw2e9XTf/YL7BDWL7GMs9ayTBMmTnFUGW8CMO7MWpdNwvCLUNzfj3/Xu2EdPzLXzP3zoMj03wdx0abSsCZDFwYiOAOltZq8H0rIk/p9jnLFb/choG4wzyb9ziI4jajUqWQ2+cRvHtsi2/k7h4JQ9G1s7Dx7X49oSvzZjtsmtiauqbMMoaTkjPXr/vcuo0ysof8T9eqSrl08b/bDTuPapC3i+34MJGEsXRVKQR1PHsOYudRXb+dT6N7FYMIb90DRP6l/itvALOEummZ9bQaKKcMaE3oLm9i0uzGzETUwZkspzgIQ3l+SIwKg53K9RsyowjU1GIQ+4SHPb2h3tACI/5GJpuLZ3d/L3IuZSL9iGGcszi6zdo7eqGuk7DE+qzF/1YYMtpc0cXfEMjeWxOQTHUf2lQVVfP46whuUOj4yz/zEF+WWFfYijRlpTd41B+6ezp5SSk5/Alta5Jizdv36JcXQ3VWpyF0vsVXIxxxoS0nFz7zTG0hKawypQ6+/hJA59CFawTM6Y5RCal8bxi3Q4VaQ0t7RidmERUkty+k29ITCJbknXQdjzFyaAIXtvQEn63opIXb5Y4kkT1CCXfxtYOHJEE2KcYqmR9WF65+ft93rnyymocY8s3JVnKQ1Sz0JJN92i5pgKxpfMpJtkKRisZtUFiDNMzeFhVw/9Ga6i4o3z1SeSYf9694wdYjW0dvJMvdIOYNBjZCGhHRHzKenVKlSwtydTp7t4+NLV18ukzMDKKS4XFvN6hOBJDRxoLjCG2slnzQF3D89KeFnOAjQ7fsKi1vHDBCjk/xKMpZL0XouKN7lHdcrXoBlR3/kCcPAPSyNhNHaScQz+/uc0PUKzX6XA2VZPgzUbPvh2ei+2KmJ1g2UiSLFvP/y/2nJi9gihGAFGMAKIYAUQxAohiBBDFCCCKEUAUI4AoRoAtYsRPzT6w5VOz2bl5ZCmUOz7i/JShQ8GM3ALMLyxuiFleXkZv/wD/ajGUjZzgmESHgo5t6P0PnW0tma0+Z6VrdXWVv7Smdyl9A0MOBeVY6vvKysqaDeA/GDO4+bdQ8toAAAAASUVORK5CYII=" InformativeScreenshot="7f2e08194616f41df45bc51348ed57f3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NSelectItem DelayBefore="3" DisplayName="Select Item '50'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="1000" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="9">
+                                      <x:String>...</x:String>
+                                      <x:String>10</x:String>
+                                      <x:String>30</x:String>
+                                      <x:String>50</x:String>
+                                      <x:String>100</x:String>
+                                      <x:String>150</x:String>
+                                      <x:String>200</x:String>
+                                      <x:String>500</x:String>
+                                      <x:String>1000</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums" CvTextArea="106, 343, 21, 16" CvTextArgument="50" CvType="Text" DesignTimeRectangle="85, 396, 103, 45" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'50'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-control mr-1 rounded' aaname='' /&gt;" Guid="112f3ce1-f9cc-4e73-9c4a-07f5ee5c77e5" ImageBase64="" InformativeScreenshot="3ac2255385b118a916d5bb0a258f7be5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'BUTTON llrqk1ugg1x0xund…'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums" DesignTimeRectangle="1801, 457, 28, 20" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" Guid="3134ca3e-0a4e-4256-a00d-4449f3bd57a0" ImageBase64="" InformativeScreenshot="584f763a01ec8e4afe242332e9686588.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                      <uix:TargetAnchorable.FullSelectorArgument>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">string.Format("&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='SPAN' /&gt;", Index)</CSharpValue>
+                                        </InArgument>
+                                      </uix:TargetAnchorable.FullSelectorArgument>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Qarşı tərəfə göndər'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="1437, 534, 313, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Qarşı tərəfə göndər'" FullSelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl aaname='Qarşı tərəfə göndər' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl aaname='Qarşı tərəfə göndər' type='' tag='A' class='doOperation dropdown-item' check:innerText='Qarşı tərəfə göndər' /&gt;" Guid="b92e826d-15ad-4ba1-ba42-749ae1e311f0" ImageBase64="" InformativeScreenshot="de8afdc35c6383b8f3109e5624808065.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <Sequence DisplayName="select executer" sap:VirtualizedContainerService.HintSize="608,2628.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="545.6,406.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="387.2,100" sap2010:WorkflowViewState.IdRef="DatabaseConnect_4" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=.;Initial Catalog=Test;Integrated Security=True;Encrypt=False">
+                                      <ui:DatabaseConnect.DatabaseConnection>
+                                        <OutArgument x:TypeArguments="ui:DatabaseConnection">
+                                          <CSharpReference x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">dbConection</CSharpReference>
+                                        </OutArgument>
+                                      </ui:DatabaseConnect.DatabaseConnection>
+                                    </ui:DatabaseConnect>
+                                    <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="387.2,129.6" sap2010:WorkflowViewState.IdRef="ExecuteQuery_4" Sql="select top 1 from Voens">
+                                      <ui:ExecuteQuery.DataTable>
+                                        <OutArgument x:TypeArguments="sd:DataTable">
+                                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">dtVoenData</CSharpReference>
+                                        </OutArgument>
+                                      </ui:ExecuteQuery.DataTable>
+                                      <ui:ExecuteQuery.ExistingDbConnection>
+                                        <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                          <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">dbConection</CSharpValue>
+                                        </InArgument>
+                                      </ui:ExecuteQuery.ExistingDbConnection>
+                                      <ui:ExecuteQuery.Parameters>
+                                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                      </ui:ExecuteQuery.Parameters>
+                                    </ui:ExecuteQuery>
+                                    <ui:DatabaseDisconnect DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_2">
+                                      <ui:DatabaseDisconnect.DatabaseConnection>
+                                        <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                          <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">dbConection</CSharpValue>
+                                        </InArgument>
+                                      </ui:DatabaseDisconnect.DatabaseConnection>
+                                    </ui:DatabaseDisconnect>
+                                  </Sequence>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'İcraçı şəxsi seçin'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="545.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llt5smvue1shc&amp;durOid=&amp;docNo=PH0000034098/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" CvTextArea="523, 525, 193, 20" CvTextArgument="ELMIR HESENOV EjDeR" CvType="Text" DesignTimeRectangle="517, 520, 862, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='search' class='vs__search' aaname='' /&gt;" Guid="e75cca99-739a-416a-a39d-d1796bd4a01c" InformativeScreenshot="bde32bc9621a0dc6cbf6b6efbd53611b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CvTextArea="510, 481, 131, 21" CvTextArgument="icraci saxsi secin" CvType="Text" DesignTimeRectangle="513, 479, 128, 25" ElementType="Text" FriendlyName="'İcraçı şəxsi seçin'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='text-grey-300' aaname='İcraçı şəxsi seçin' check:innerText='İcraçı şəxsi seçin' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                    <uix:NTypeInto.Text>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">dt_row["Person1"].ToString() +"[k(Enter)]"</CSharpValue>
+                                      </InArgument>
+                                    </uix:NTypeInto.Text>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NTypeInto>
+                                  <ui:UiElementExists DisplayName="Element Exists 'BUTTON  btnRegister'" sap:VirtualizedContainerService.HintSize="545.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                    <ui:UiElementExists.Exists>
+                                      <OutArgument x:TypeArguments="x:Boolean">
+                                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">isSendButtonExist</CSharpReference>
+                                      </OutArgument>
+                                    </ui:UiElementExists.Exists>
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fa5440d5-3264-48dc-8638-3e51b1f189de" InformativeScreenshot="f5f49f6c7ea28e35c4d9949f224903b2" Selector="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:UiElementExists.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:UiElementExists>
+                                  <If sap:VirtualizedContainerService.HintSize="545.6,1507.2" sap2010:WorkflowViewState.IdRef="If_4">
+                                    <If.Condition>
+                                      <InArgument x:TypeArguments="x:Boolean">
+                                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">isSendButtonExist</CSharpValue>
+                                      </InArgument>
+                                    </If.Condition>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Göndər'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_57" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llt5ou2ub1x0h&amp;durOid=&amp;docNo=PH0000035450/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" CvTextArea="1250, 647, 53, 15" CvTextArgument="Gondar" CvType="Text" DesignTimeRectangle="1236, 634, 130, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' type='button' class='btn btn-primary btn-sm btn-labeled btn-labeled-right' aaname='  Göndər ' check:innerText='Göndər' /&gt;" Guid="4ec8006c-6a72-4853-a1b0-f493a484f292" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAsCAYAAACg/sAZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVdSURBVHhe7ZzrT1RHGMb7H7X91C9tTdM2fmrafjAxqU0qTWtMMTVS23hpsQ2aQqhtVbTBSykVCigFUaEICIKAYIs3rnIXiwLLIiygu1ze7jNxDufsvix2cw4zxHmSX9zdGc5Bnx8zw5rsC2RiwsSIYcLGiGFCRUVFTx8txRKjt3+QPt2xi15Z/67BY1589U2teOn1t+nldevpo8QdwgPEEsNIsXpw5WjBa2/R5sQk4YMlBvcXMHgDW4omYOVAjBgK4ArRCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDLd4f1MCtXfdpZKyS+z4s4B4Isa+tB/pZms7TUxO0szsLD0YGaVzZRW08ZNEx7zjv/9Bdzo6KTn1IDW33KTq+kbHeDx89tXXNOrziftx4zrAleEGkKKrp1f0Ob+wELcciOtiFIe/mWAwSP2DQ5Rd8CelHjpGlVeuCkkgyJakpf/eP1NykcbG/ZSekUkDQ/epLWy6/Vrx8LyKYZdCJhSao8ys0+z8WCCuinHgpwyaCkzT5boGeuO9jY4xrBYnTuc5XvOC51EMTgqtVozaxiYa90/Q9r3fsuORyC0HX9Pd109HTv5mjUGyltutYs6VhmtiZekbvEencvMd19idkmZdAyvOkRNZDjE+/vxLKq2spoF7Q+Ia8pry6+V9Ug4epsa/W2j44QilH820xr2AKyNe3JYCIK6KgeJ6+gbYsUgys3Np9vFjMb/g3AVqaP6HnjwJ0sWKy2Ic5U0FAuSfeES32joor6iEbrd3ijNLxqlsMQfbFObcH35AxaXlVFVbLwTBdaUYrR1d9HB0TDzPzi8U98M47s/d53x5Je3ct1+MeQVXxkpwh0ovpACI62I037jleA0HSqwGoONuD6UePia2md6BQfGXsm85OIv4/H6x4qAwSHC16bo1LrcJrEx4fuNOmzi3YFWQc3ILi2lubs4S450PEhz3wGPcF/fHY+4+XsOVEQu7ALJ4r6QAiOti4KfO/lpW3hmxlNfUX6PA9AydzMmnpOQU8RMaeQ7ANoAzCuagsEeTU/RrboFjjpRvQ8JWGvp3OEpEbC2TU4Goa9vBGO6P72O5+3gJV0YsmsJbnD0QAKucPW5JARBXxUBJ2KM3b/siagwF4DcTlP7N9z8ISSLLwz6PkqQYcr59jhQDv92MjPmixNi2K1mcJXBtzMFvO1gR7GDLgjyQaLn7eAlXRiy41cEeN6UAiKti4B8X+zeW88gxewEQBwJFLt85Z4tFYd+l/7yiGHjc2d0TtR3hV195xpCrSkVNnTUO8FwKvBbEAMvJ4bYUAHFVDBSEN6qmZ2bEexTY3+XreDMLy58s4MKlKvH8l6wc8RwHPqwA7V3d1t6/khgQECtA4flS8TU4a+Ass7CwaK1G5dW1NOYbtw6U8sCK1/F8rYgBIuXwQgqAuCoGgAxlVdViq7AnGAqJ0nbvTxPzUGRdYzOFwgdFZHFxUawAW3fuEePPIgau8VdVjXhDDZmfn6fr4TGIIMXA+yeQFffHSoI/sVJJadeSGEDK4ZUUAHFdDDsoZe+B9Ki3wiPBuUAWFS84T0AUbgxgDPeJNWe14Mr4P3y4JZHSDh1lx9wA8VQMAw9Xhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhi5EfdSS+XC21YMrRAu4D2czH+e4erClKCTmxzmamCyF6D+7l7c1MrEK6QAAAABJRU5ErkJggg==" InformativeScreenshot="efa9a2f59d2ebc5dbd5436bce57d455f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector, Image, CV" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvElementArea="1233, 633, 135, 43" CvType="InputBox" DesignTimeRectangle="1252, 644, 51, 19" ElementType="Text" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' type='' class='' aaname='Göndər' check:innerText='Göndər' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,1061.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,264.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Version="V3">
+                                          <uix:NTypeInto.Text>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">dt_row["Person2"].ToString() +"[k(Enter)]"</CSharpValue>
+                                            </InArgument>
+                                          </uix:NTypeInto.Text>
+                                        </uix:NTypeInto>
+                                        <ui:UiElementExists DisplayName="Element Exists 'BUTTON  btnRegister'" sap:VirtualizedContainerService.HintSize="449.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                          <ui:UiElementExists.Exists>
+                                            <OutArgument x:TypeArguments="x:Boolean">
+                                              <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">isSendButtonExist</CSharpReference>
+                                            </OutArgument>
+                                          </ui:UiElementExists.Exists>
+                                          <ui:UiElementExists.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fa5440d5-3264-48dc-8638-3e51b1f189de" InformativeScreenshot="f5f49f6c7ea28e35c4d9949f224903b2" Selector="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:UiElementExists.Target>
+                                        </ui:UiElementExists>
+                                        <If sap:VirtualizedContainerService.HintSize="449.6,563.2" sap2010:WorkflowViewState.IdRef="If_5">
+                                          <If.Condition>
+                                            <InArgument x:TypeArguments="x:Boolean">
+                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">isSendButtonExist</CSharpValue>
+                                            </InArgument>
+                                          </If.Condition>
+                                          <If.Then>
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Göndər'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_58" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llt5ou2ub1x0h&amp;durOid=&amp;docNo=PH0000035450/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" CvTextArea="1250, 647, 53, 15" CvTextArgument="Gondar" CvType="Text" DesignTimeRectangle="1236, 634, 130, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' type='button' class='btn btn-primary btn-sm btn-labeled btn-labeled-right' aaname='  Göndər ' check:innerText='Göndər' /&gt;" Guid="4ec8006c-6a72-4853-a1b0-f493a484f292" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAsCAYAAACg/sAZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVdSURBVHhe7ZzrT1RHGMb7H7X91C9tTdM2fmrafjAxqU0qTWtMMTVS23hpsQ2aQqhtVbTBSykVCigFUaEICIKAYIs3rnIXiwLLIiygu1ze7jNxDufsvix2cw4zxHmSX9zdGc5Bnx8zw5rsC2RiwsSIYcLGiGFCRUVFTx8txRKjt3+QPt2xi15Z/67BY1589U2teOn1t+nldevpo8QdwgPEEsNIsXpw5WjBa2/R5sQk4YMlBvcXMHgDW4omYOVAjBgK4ArRCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDLd4f1MCtXfdpZKyS+z4s4B4Isa+tB/pZms7TUxO0szsLD0YGaVzZRW08ZNEx7zjv/9Bdzo6KTn1IDW33KTq+kbHeDx89tXXNOrziftx4zrAleEGkKKrp1f0Ob+wELcciOtiFIe/mWAwSP2DQ5Rd8CelHjpGlVeuCkkgyJakpf/eP1NykcbG/ZSekUkDQ/epLWy6/Vrx8LyKYZdCJhSao8ys0+z8WCCuinHgpwyaCkzT5boGeuO9jY4xrBYnTuc5XvOC51EMTgqtVozaxiYa90/Q9r3fsuORyC0HX9Pd109HTv5mjUGyltutYs6VhmtiZekbvEencvMd19idkmZdAyvOkRNZDjE+/vxLKq2spoF7Q+Ia8pry6+V9Ug4epsa/W2j44QilH820xr2AKyNe3JYCIK6KgeJ6+gbYsUgys3Np9vFjMb/g3AVqaP6HnjwJ0sWKy2Ic5U0FAuSfeES32joor6iEbrd3ijNLxqlsMQfbFObcH35AxaXlVFVbLwTBdaUYrR1d9HB0TDzPzi8U98M47s/d53x5Je3ct1+MeQVXxkpwh0ovpACI62I037jleA0HSqwGoONuD6UePia2md6BQfGXsm85OIv4/H6x4qAwSHC16bo1LrcJrEx4fuNOmzi3YFWQc3ILi2lubs4S450PEhz3wGPcF/fHY+4+XsOVEQu7ALJ4r6QAiOti4KfO/lpW3hmxlNfUX6PA9AydzMmnpOQU8RMaeQ7ANoAzCuagsEeTU/RrboFjjpRvQ8JWGvp3OEpEbC2TU4Goa9vBGO6P72O5+3gJV0YsmsJbnD0QAKucPW5JARBXxUBJ2KM3b/siagwF4DcTlP7N9z8ISSLLwz6PkqQYcr59jhQDv92MjPmixNi2K1mcJXBtzMFvO1gR7GDLgjyQaLn7eAlXRiy41cEeN6UAiKti4B8X+zeW88gxewEQBwJFLt85Z4tFYd+l/7yiGHjc2d0TtR3hV195xpCrSkVNnTUO8FwKvBbEAMvJ4bYUAHFVDBSEN6qmZ2bEexTY3+XreDMLy58s4MKlKvH8l6wc8RwHPqwA7V3d1t6/khgQECtA4flS8TU4a+Ass7CwaK1G5dW1NOYbtw6U8sCK1/F8rYgBIuXwQgqAuCoGgAxlVdViq7AnGAqJ0nbvTxPzUGRdYzOFwgdFZHFxUawAW3fuEePPIgau8VdVjXhDDZmfn6fr4TGIIMXA+yeQFffHSoI/sVJJadeSGEDK4ZUUAHFdDDsoZe+B9Ki3wiPBuUAWFS84T0AUbgxgDPeJNWe14Mr4P3y4JZHSDh1lx9wA8VQMAw9Xhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhi5EfdSS+XC21YMrRAu4D2czH+e4erClKCTmxzmamCyF6D+7l7c1MrEK6QAAAABJRU5ErkJggg==" InformativeScreenshot="efa9a2f59d2ebc5dbd5436bce57d455f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector, Image, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target CvElementArea="1233, 633, 135, 43" CvType="InputBox" DesignTimeRectangle="1252, 644, 51, 19" ElementType="Text" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' type='' class='' aaname='Göndər' check:innerText='Göndər' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:Continue sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bağla'" sap:VirtualizedContainerService.HintSize="545.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llrqk1ugg1wyx&amp;durOid=&amp;docNo=PH0000035941/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" DesignTimeRectangle="1162, 765, 73, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Bağla'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' type='' class='swal-button swal-button--confirm btn btn-sm btn-primary swal-button--danger' check:innerText='Bağla' /&gt;" Guid="ba7029a3-ca4b-48ab-936d-c553877e63d0" ImageBase64="" InformativeScreenshot="ea31ee289902f5cc8fd7d3c0e94cd718.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="608,180.8" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="1495, 387, 45, 50" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;span' parentid='appForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='appForm' tag='SPAN' class='closeOffCanvas bg-primary-700' aaname='' /&gt;" Guid="9b20ca10-0bea-4987-991e-4b68012b22bb" ImageBase64="" InformativeScreenshot="7373bc494cc86edf2a051b2fb3ad7f41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="845.6,4044.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="783.2,3958.4" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                                <ui:IfElseIf.ConditionBlocks>
+                                  <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                    <ui:IfElseIfBlock BlockType="If">
+                                      <ui:IfElseIfBlock.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">dt_row["Status"].ToString() == "İmzalandı"</CSharpValue>
+                                        </InArgument>
+                                      </ui:IfElseIfBlock.Condition>
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="732.8,3600.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="670.4,3514.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'BUTTON llrqk1ugg1x0xund…'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_50" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums" DesignTimeRectangle="1801, 457, 28, 20" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" Guid="3134ca3e-0a4e-4256-a00d-4449f3bd57a0" ImageBase64="" InformativeScreenshot="584f763a01ec8e4afe242332e9686588.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                                  <uix:TargetAnchorable.FullSelectorArgument>
+                                                    <InArgument x:TypeArguments="x:String">
+                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">string.Format("&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='SPAN' /&gt;", Index)</CSharpValue>
+                                                    </InArgument>
+                                                  </uix:TargetAnchorable.FullSelectorArgument>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Qarşı tərəfə göndər'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="1437, 534, 313, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Qarşı tərəfə göndər'" FullSelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl aaname='Qarşı tərəfə göndər' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='documentListTable' tag='TABLE' /&gt;&lt;webctrl aaname='Qarşı tərəfə göndər' type='' tag='A' class='doOperation dropdown-item' check:innerText='Qarşı tərəfə göndər' /&gt;" Guid="b92e826d-15ad-4ba1-ba42-749ae1e311f0" ImageBase64="" InformativeScreenshot="de8afdc35c6383b8f3109e5624808065.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <Sequence DisplayName="select executer" sap:VirtualizedContainerService.HintSize="608,2628.8" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="545.6,406.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="387.2,100" sap2010:WorkflowViewState.IdRef="DatabaseConnect_5" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=.;Initial Catalog=Test;Integrated Security=True;Encrypt=False">
+                                                  <ui:DatabaseConnect.DatabaseConnection>
+                                                    <OutArgument x:TypeArguments="ui:DatabaseConnection">
+                                                      <CSharpReference x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">dbConection</CSharpReference>
+                                                    </OutArgument>
+                                                  </ui:DatabaseConnect.DatabaseConnection>
+                                                </ui:DatabaseConnect>
+                                                <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="387.2,129.6" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5" Sql="select top 1 from Voens">
+                                                  <ui:ExecuteQuery.DataTable>
+                                                    <OutArgument x:TypeArguments="sd:DataTable">
+                                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">dtVoenData</CSharpReference>
+                                                    </OutArgument>
+                                                  </ui:ExecuteQuery.DataTable>
+                                                  <ui:ExecuteQuery.ExistingDbConnection>
+                                                    <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                                      <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">dbConection</CSharpValue>
+                                                    </InArgument>
+                                                  </ui:ExecuteQuery.ExistingDbConnection>
+                                                  <ui:ExecuteQuery.Parameters>
+                                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                  </ui:ExecuteQuery.Parameters>
+                                                </ui:ExecuteQuery>
+                                                <ui:DatabaseDisconnect DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1">
+                                                  <ui:DatabaseDisconnect.DatabaseConnection>
+                                                    <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                                      <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">dbConection</CSharpValue>
+                                                    </InArgument>
+                                                  </ui:DatabaseDisconnect.DatabaseConnection>
+                                                </ui:DatabaseDisconnect>
+                                              </Sequence>
+                                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'İcraçı şəxsi seçin'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="545.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                                <uix:NTypeInto.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llt5smvue1shc&amp;durOid=&amp;docNo=PH0000034098/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" CvTextArea="523, 525, 193, 20" CvTextArgument="ELMIR HESENOV EjDeR" CvType="Text" DesignTimeRectangle="517, 520, 862, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='search' class='vs__search' aaname='' /&gt;" Guid="e75cca99-739a-416a-a39d-d1796bd4a01c" InformativeScreenshot="bde32bc9621a0dc6cbf6b6efbd53611b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target CvTextArea="510, 481, 131, 21" CvTextArgument="icraci saxsi secin" CvType="Text" DesignTimeRectangle="513, 479, 128, 25" ElementType="Text" FriendlyName="'İcraçı şəxsi seçin'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='text-grey-300' aaname='İcraçı şəxsi seçin' check:innerText='İcraçı şəxsi seçin' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NTypeInto.Target>
+                                                <uix:NTypeInto.Text>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">dt_row["Person1"].ToString() +"[k(Enter)]"</CSharpValue>
+                                                  </InArgument>
+                                                </uix:NTypeInto.Text>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NTypeInto>
+                                              <ui:UiElementExists DisplayName="Element Exists 'BUTTON  btnRegister'" sap:VirtualizedContainerService.HintSize="545.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                                                <ui:UiElementExists.Exists>
+                                                  <OutArgument x:TypeArguments="x:Boolean">
+                                                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">isSendButtonExist</CSharpReference>
+                                                  </OutArgument>
+                                                </ui:UiElementExists.Exists>
+                                                <ui:UiElementExists.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fa5440d5-3264-48dc-8638-3e51b1f189de" InformativeScreenshot="f5f49f6c7ea28e35c4d9949f224903b2" Selector="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;">
+                                                    <ui:Target.TimeoutMS>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:Target.TimeoutMS>
+                                                    <ui:Target.WaitForReady>
+                                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                    </ui:Target.WaitForReady>
+                                                  </ui:Target>
+                                                </ui:UiElementExists.Target>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ui:UiElementExists>
+                                              <If sap:VirtualizedContainerService.HintSize="545.6,1507.2" sap2010:WorkflowViewState.IdRef="If_6">
+                                                <If.Condition>
+                                                  <InArgument x:TypeArguments="x:Boolean">
+                                                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">isSendButtonExist</CSharpValue>
+                                                  </InArgument>
+                                                </If.Condition>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <If.Then>
+                                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Göndər'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_60" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llt5ou2ub1x0h&amp;durOid=&amp;docNo=PH0000035450/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" CvTextArea="1250, 647, 53, 15" CvTextArgument="Gondar" CvType="Text" DesignTimeRectangle="1236, 634, 130, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' type='button' class='btn btn-primary btn-sm btn-labeled btn-labeled-right' aaname='  Göndər ' check:innerText='Göndər' /&gt;" Guid="4ec8006c-6a72-4853-a1b0-f493a484f292" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAsCAYAAACg/sAZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVdSURBVHhe7ZzrT1RHGMb7H7X91C9tTdM2fmrafjAxqU0qTWtMMTVS23hpsQ2aQqhtVbTBSykVCigFUaEICIKAYIs3rnIXiwLLIiygu1ze7jNxDufsvix2cw4zxHmSX9zdGc5Bnx8zw5rsC2RiwsSIYcLGiGFCRUVFTx8txRKjt3+QPt2xi15Z/67BY1589U2teOn1t+nldevpo8QdwgPEEsNIsXpw5WjBa2/R5sQk4YMlBvcXMHgDW4omYOVAjBgK4ArRCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDLd4f1MCtXfdpZKyS+z4s4B4Isa+tB/pZms7TUxO0szsLD0YGaVzZRW08ZNEx7zjv/9Bdzo6KTn1IDW33KTq+kbHeDx89tXXNOrziftx4zrAleEGkKKrp1f0Ob+wELcciOtiFIe/mWAwSP2DQ5Rd8CelHjpGlVeuCkkgyJakpf/eP1NykcbG/ZSekUkDQ/epLWy6/Vrx8LyKYZdCJhSao8ys0+z8WCCuinHgpwyaCkzT5boGeuO9jY4xrBYnTuc5XvOC51EMTgqtVozaxiYa90/Q9r3fsuORyC0HX9Pd109HTv5mjUGyltutYs6VhmtiZekbvEencvMd19idkmZdAyvOkRNZDjE+/vxLKq2spoF7Q+Ia8pry6+V9Ug4epsa/W2j44QilH820xr2AKyNe3JYCIK6KgeJ6+gbYsUgys3Np9vFjMb/g3AVqaP6HnjwJ0sWKy2Ic5U0FAuSfeES32joor6iEbrd3ijNLxqlsMQfbFObcH35AxaXlVFVbLwTBdaUYrR1d9HB0TDzPzi8U98M47s/d53x5Je3ct1+MeQVXxkpwh0ovpACI62I037jleA0HSqwGoONuD6UePia2md6BQfGXsm85OIv4/H6x4qAwSHC16bo1LrcJrEx4fuNOmzi3YFWQc3ILi2lubs4S450PEhz3wGPcF/fHY+4+XsOVEQu7ALJ4r6QAiOti4KfO/lpW3hmxlNfUX6PA9AydzMmnpOQU8RMaeQ7ANoAzCuagsEeTU/RrboFjjpRvQ8JWGvp3OEpEbC2TU4Goa9vBGO6P72O5+3gJV0YsmsJbnD0QAKucPW5JARBXxUBJ2KM3b/siagwF4DcTlP7N9z8ISSLLwz6PkqQYcr59jhQDv92MjPmixNi2K1mcJXBtzMFvO1gR7GDLgjyQaLn7eAlXRiy41cEeN6UAiKti4B8X+zeW88gxewEQBwJFLt85Z4tFYd+l/7yiGHjc2d0TtR3hV195xpCrSkVNnTUO8FwKvBbEAMvJ4bYUAHFVDBSEN6qmZ2bEexTY3+XreDMLy58s4MKlKvH8l6wc8RwHPqwA7V3d1t6/khgQECtA4flS8TU4a+Ass7CwaK1G5dW1NOYbtw6U8sCK1/F8rYgBIuXwQgqAuCoGgAxlVdViq7AnGAqJ0nbvTxPzUGRdYzOFwgdFZHFxUawAW3fuEePPIgau8VdVjXhDDZmfn6fr4TGIIMXA+yeQFffHSoI/sVJJadeSGEDK4ZUUAHFdDDsoZe+B9Ki3wiPBuUAWFS84T0AUbgxgDPeJNWe14Mr4P3y4JZHSDh1lx9wA8VQMAw9Xhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhi5EfdSS+XC21YMrRAu4D2czH+e4erClKCTmxzmamCyF6D+7l7c1MrEK6QAAAABJRU5ErkJggg==" InformativeScreenshot="efa9a2f59d2ebc5dbd5436bce57d455f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector, Image, CV" Version="V2" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CvElementArea="1233, 633, 135, 43" CvType="InputBox" DesignTimeRectangle="1252, 644, 51, 19" ElementType="Text" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' type='' class='' aaname='Göndər' check:innerText='Göndər' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NClick.Target>
+                                                    </uix:NClick>
+                                                  </Sequence>
+                                                </If.Then>
+                                                <If.Else>
+                                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,1061.6" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,264.8" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Version="V3">
+                                                      <uix:NTypeInto.Text>
+                                                        <InArgument x:TypeArguments="x:String">
+                                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">dt_row["Person2"].ToString() +"[k(Enter)]"</CSharpValue>
+                                                        </InArgument>
+                                                      </uix:NTypeInto.Text>
+                                                    </uix:NTypeInto>
+                                                    <ui:UiElementExists DisplayName="Element Exists 'BUTTON  btnRegister'" sap:VirtualizedContainerService.HintSize="449.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                                                      <ui:UiElementExists.Exists>
+                                                        <OutArgument x:TypeArguments="x:Boolean">
+                                                          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">isSendButtonExist</CSharpReference>
+                                                        </OutArgument>
+                                                      </ui:UiElementExists.Exists>
+                                                      <ui:UiElementExists.Target>
+                                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fa5440d5-3264-48dc-8638-3e51b1f189de" InformativeScreenshot="f5f49f6c7ea28e35c4d9949f224903b2" Selector="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;">
+                                                          <ui:Target.TimeoutMS>
+                                                            <InArgument x:TypeArguments="x:Int32" />
+                                                          </ui:Target.TimeoutMS>
+                                                          <ui:Target.WaitForReady>
+                                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                          </ui:Target.WaitForReady>
+                                                        </ui:Target>
+                                                      </ui:UiElementExists.Target>
+                                                    </ui:UiElementExists>
+                                                    <If sap:VirtualizedContainerService.HintSize="449.6,563.2" sap2010:WorkflowViewState.IdRef="If_7">
+                                                      <If.Condition>
+                                                        <InArgument x:TypeArguments="x:Boolean">
+                                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">isSendButtonExist</CSharpValue>
+                                                        </InArgument>
+                                                      </If.Condition>
+                                                      <If.Then>
+                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Göndər'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_61" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llt5ou2ub1x0h&amp;durOid=&amp;docNo=PH0000035450/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" CvTextArea="1250, 647, 53, 15" CvTextArgument="Gondar" CvType="Text" DesignTimeRectangle="1236, 634, 130, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl id='btnRegister' tag='BUTTON' type='button' class='btn btn-primary btn-sm btn-labeled btn-labeled-right' aaname='  Göndər ' check:innerText='Göndər' /&gt;" Guid="4ec8006c-6a72-4853-a1b0-f493a484f292" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAsCAYAAACg/sAZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVdSURBVHhe7ZzrT1RHGMb7H7X91C9tTdM2fmrafjAxqU0qTWtMMTVS23hpsQ2aQqhtVbTBSykVCigFUaEICIKAYIs3rnIXiwLLIiygu1ze7jNxDufsvix2cw4zxHmSX9zdGc5Bnx8zw5rsC2RiwsSIYcLGiGFCRUVFTx8txRKjt3+QPt2xi15Z/67BY1589U2teOn1t+nldevpo8QdwgPEEsNIsXpw5WjBa2/R5sQk4YMlBvcXMHgDW4omYOVAjBgK4ArRCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDJ1AjBgK4MrQCcSIoQCuDLd4f1MCtXfdpZKyS+z4s4B4Isa+tB/pZms7TUxO0szsLD0YGaVzZRW08ZNEx7zjv/9Bdzo6KTn1IDW33KTq+kbHeDx89tXXNOrziftx4zrAleEGkKKrp1f0Ob+wELcciOtiFIe/mWAwSP2DQ5Rd8CelHjpGlVeuCkkgyJakpf/eP1NykcbG/ZSekUkDQ/epLWy6/Vrx8LyKYZdCJhSao8ys0+z8WCCuinHgpwyaCkzT5boGeuO9jY4xrBYnTuc5XvOC51EMTgqtVozaxiYa90/Q9r3fsuORyC0HX9Pd109HTv5mjUGyltutYs6VhmtiZekbvEencvMd19idkmZdAyvOkRNZDjE+/vxLKq2spoF7Q+Ia8pry6+V9Ug4epsa/W2j44QilH820xr2AKyNe3JYCIK6KgeJ6+gbYsUgys3Np9vFjMb/g3AVqaP6HnjwJ0sWKy2Ic5U0FAuSfeES32joor6iEbrd3ijNLxqlsMQfbFObcH35AxaXlVFVbLwTBdaUYrR1d9HB0TDzPzi8U98M47s/d53x5Je3ct1+MeQVXxkpwh0ovpACI62I037jleA0HSqwGoONuD6UePia2md6BQfGXsm85OIv4/H6x4qAwSHC16bo1LrcJrEx4fuNOmzi3YFWQc3ILi2lubs4S450PEhz3wGPcF/fHY+4+XsOVEQu7ALJ4r6QAiOti4KfO/lpW3hmxlNfUX6PA9AydzMmnpOQU8RMaeQ7ANoAzCuagsEeTU/RrboFjjpRvQ8JWGvp3OEpEbC2TU4Goa9vBGO6P72O5+3gJV0YsmsJbnD0QAKucPW5JARBXxUBJ2KM3b/siagwF4DcTlP7N9z8ISSLLwz6PkqQYcr59jhQDv92MjPmixNi2K1mcJXBtzMFvO1gR7GDLgjyQaLn7eAlXRiy41cEeN6UAiKti4B8X+zeW88gxewEQBwJFLt85Z4tFYd+l/7yiGHjc2d0TtR3hV195xpCrSkVNnTUO8FwKvBbEAMvJ4bYUAHFVDBSEN6qmZ2bEexTY3+XreDMLy58s4MKlKvH8l6wc8RwHPqwA7V3d1t6/khgQECtA4flS8TU4a+Ass7CwaK1G5dW1NOYbtw6U8sCK1/F8rYgBIuXwQgqAuCoGgAxlVdViq7AnGAqJ0nbvTxPzUGRdYzOFwgdFZHFxUawAW3fuEePPIgau8VdVjXhDDZmfn6fr4TGIIMXA+yeQFffHSoI/sVJJadeSGEDK4ZUUAHFdDDsoZe+B9Ki3wiPBuUAWFS84T0AUbgxgDPeJNWe14Mr4P3y4JZHSDh1lx9wA8VQMAw9Xhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhk4gRgwFcGXoBGLEUABXhi5EfdSS+XC21YMrRAu4D2czH+e4erClKCTmxzmamCyF6D+7l7c1MrEK6QAAAABJRU5ErkJggg==" InformativeScreenshot="efa9a2f59d2ebc5dbd5436bce57d455f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector, Image, CV" Version="V2" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target CvElementArea="1233, 633, 135, 43" CvType="InputBox" DesignTimeRectangle="1252, 644, 51, 19" ElementType="Text" FriendlyName="'Göndər'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl parentid='btnRegister' tag='SPAN' type='' class='' aaname='Göndər' check:innerText='Göndər' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ui:Continue sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Continue_2" />
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                  </Sequence>
+                                                </If.Else>
+                                              </If>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bağla'" sap:VirtualizedContainerService.HintSize="545.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_62" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llrqk1ugg1wyx&amp;durOid=&amp;docNo=PH0000035941/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" DesignTimeRectangle="1162, 765, 73, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Bağla'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' type='' class='swal-button swal-button--confirm btn btn-sm btn-primary swal-button--danger' check:innerText='Bağla' /&gt;" Guid="ba7029a3-ca4b-48ab-936d-c553877e63d0" ImageBase64="" InformativeScreenshot="ea31ee289902f5cc8fd7d3c0e94cd718.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bağla'" sap:VirtualizedContainerService.HintSize="608,197.6" sap2010:WorkflowViewState.IdRef="NClick_55" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?gateway=1&amp;doc=project.flClipSend&amp;docOid=llrqk1ugg1wyx&amp;durOid=&amp;docNo=PH0000035941/1&amp;signType=0&amp;viewType=0&amp;wfOid=1fktl71juc105w&amp;flow=flClipSend&amp;flowAlias=sendToCompanyContract&amp;docType=docType_45&amp;magusreport=1" DesignTimeRectangle="1162, 765, 73, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Bağla'" FullSelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainModalBody' tag='IFRAME' /&gt;&lt;webctrl aaname='Bağla' tag='BUTTON' type='' class='swal-button swal-button--confirm btn btn-sm btn-primary swal-button--danger' check:innerText='Bağla' /&gt;" Guid="ba7029a3-ca4b-48ab-936d-c553877e63d0" ImageBase64="" InformativeScreenshot="ea31ee289902f5cc8fd7d3c0e94cd718.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="608,180.8" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aba2c185-59b3-4085-8a9d-cc8de0de567b" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/core.getReport?reportId=clipAddendums#" DesignTimeRectangle="1495, 387, 45, 50" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;span' parentid='appForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='appForm' tag='SPAN' class='closeOffCanvas bg-primary-700' aaname='' /&gt;" Guid="9b20ca10-0bea-4987-991e-4b68012b22bb" ImageBase64="" InformativeScreenshot="7373bc494cc86edf2a051b2fb3ad7f41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='İstehsalatda bədbəxt hadisələr üzrə İllik qoşmanın əlavələri' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                          </Sequence>
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                    <ui:IfElseIfBlock BlockType="Else">
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                  </sc:BindingList>
+                                </ui:IfElseIf.ConditionBlocks>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:IfElseIf>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Break sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleDoWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="899694ee19bab2ba0bb2f3852f06d4f3.jpg" Selector="&lt;html app='chrome.exe' url='*isb.az*' /&gt;" Title="İCBARİ SIĞORTA BÜROSU" Url="https://eroom.isb.az/core.dashboard" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
